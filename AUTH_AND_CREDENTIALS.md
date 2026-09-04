@@ -1,0 +1,3 @@
+# Spendesk Connector - AUTH_AND_CREDENTIALS.md
+
+Standard documentation for Spendesk Connector in Imperal Cloud.
