@@ -6,7 +6,8 @@ from typing import Any, Optional
 DEFAULT_SPENDESK_BASE = "https://public-api.spendesk.com/v1"
 
 class SpendeskClient:
-    def __init__(self, api_token: str, base_url: str = ""):
+    def __init__(self, api_key: str = "", api_token: str = "", base_url: str = ""):
+        self.api_token = (api_token or api_key).strip()
         self.api_token = api_token.strip()
         self.base_url = (base_url.strip() if base_url else DEFAULT_SPENDESK_BASE).rstrip("/")
         self.headers = {
